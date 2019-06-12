@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Contact</title>
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+       <!--  <link rel="stylesheet" href="font-awesome-4.2.0/css"> -->
+        <link rel="stylesheet" href="css/styles1.css">
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    </head>
+    <body class="about">
+    	<div class="header">
+            <nav class="navbar navbar-default topNavBar">
+              <div class="container">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar top-bar"></span>
+                    <span class="icon-bar middle-bar"></span>
+                    <span class="icon-bar bottom-bar"></span>
+                  </button>
+                  <a class="navbar-brand logo" href="index.html"><img src="images/logo/logo.svg" class="img-responsive"></a>
+                </div>
+                <div class="collapse navbar-collapse menubar" id="bs-example-navbar-collapse-1">          
+                  <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a tabindex="0" data-toggle="dropdown" data-submenu="" aria-expanded="true"><span class="onActive">About</span></a>
+                        <ul class="dropdown-menu">
+                            <li role="separator" class="divider"></li>
+                            <li><a href="about.html" tabindex="0">Team</a></li>
+                            <li><a href="advisors.html" tabindex="1">Advisors</a></li>
+                            <li><a href="app-overview.html" tabindex="2">App Overview</a></li>
+                        </ul>
+                      </li>
+                    <li><a href="partners.html"><span class="onActive">Partners</span></a></li>
+                    <li><a href="contact.html"><span class="onActive activeLink">Contact</span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+        </div>
+        <div class="main-container" id="">
+            <img src="images/top_border-img.png" class="borderImgTop border_img_top">
+            <div class="container">              
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h3 class="top-title">Contact</h3>   
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 text-center">
+                    <p class="info-text">For PR Account Information mail us at <br> <a href="mailto:pr@tykoon.com" class="links">pr@tykoon.com</a></p>
+                    </div>
+                    <div class="col-sm-4 text-center">
+                    <p class="info-text">For Customer Support mail us at <br> <a href="mailto:customersupport@tykoon.com" class="links">customersupport@tykoon.com</a></p>
+                    </div>
+                    <div class="col-sm-4 text-center">
+                    <p class="info-text">For Tykoon Legal mail us at <br> <a href="mailto:tykoon.legal@tykoon.com" class="links">tykoon.legal@tykoon.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer" class="footer">
+        <!-- <img src="images/footer-border-img.png" class="borderImgTop footer-border-img"> -->
+            <a href="#"  class="downloadButton"><img src="images/green-logo.png"/></a>
+            <div class="bottomSection">
+                <div class="footer-bottom text-center">
+                    
+                    <div>
+                        <a target="_blank" href="http://twitter.com/#!/TykoonNation"><img src="images/twitter.png" class="twitter"/></a>
+                        <a target="_blank" href="http://www.facebook.com/TykoonNation"><img src="images/facebook.png" class="facebook"/></a> 
+                    </div>
+                    <div class="info-links">
+                        <a href="terms-of-use.html">Terms of Use</a>
+                        <span>|</span>
+                        <a href="privacy-policy.html">Privacy Policy</a>
+                    </div>
+                    <p>&copy; 2016 TYKOON, Inc. All Rights Reserved</p>
+                    <div>
+                        <span>Powered by</span>
+                        <a href="http://www.v2solutions.com" target="_blank" class="v2_link">V2Solutions</a>
+                    </div>
+                    <!-- <a href="#" id="nextBtn"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
+                    <a href="#" id="prevBtn"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></a> -->
+                </div>
+            </div>
+        </div>
+        <!-- <img src="images/footer-border-img.png" class="borderImgTop footer-border-img"> -->
+        <script>
+        var mainHeightCal = function(){
+            var window_ht = $(window).height();
+            var mainContainerMargin = parseInt($('.main-container').offset().top);
+            var footerHeight = $('.footer').height();
+            $('.main-container').css('min-height',window_ht - mainContainerMargin - footerHeight);
+        }
+        mainHeightCal();
+        window.onresize = function(event)
+        {
+            mainHeightCal();   
+        }
+
+        </script>
+    </body>
+</html>
